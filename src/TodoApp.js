@@ -1,7 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import TodoList from "./TodoList";
 
-class TodoApp extends React.Component {
+class TodoApp extends Component {
     constructor() {
         super();
         this.state = {
@@ -30,7 +30,7 @@ class TodoApp extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-4">
-                        <h3 className="text-center">React Todo App</h3>
+                        <h3 className="text-center">React To Do App</h3>
                         <div className="input-group">
                             <input type="text" placeholder="Enter Something" className="form-control" onChange={this.changeTodoInput} value={this.state.inputData} />
                             <div className="input-group-append">
